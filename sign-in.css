@@ -1,0 +1,19 @@
+
+#signin-form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#username-error-msg-1,
+#password-error-msg-1,
+#password-error-msg-2,
+#password-error-msg-3,
+#password-error-msg-4,
+#password-error-msg-5,
+#password-error-msg-6 {
+	display: none;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tech Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<nav class="nav fixed-nav">
+		<div class="logo"><i class="fa fa-bank"></i>&nbsp;Tech Solutions</div>
+		<div>
+			<ul class="menu top-menu-bar">
+				<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+				<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+				<li class="nav-item"><a class="sign-in" href="./sign-in.html">Sign In</a></li>
+			</ul>
+		</div>
+		<div class="side-menu-bar">
+			<a href="javascript:void(0);" id="myBtn" class="icon">
+				<i class="fa fa-bars"></i>
+			</a>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<nav>
+						<ul class="menu">
+							<li class="nav-item active" onClick="closeMobileNav()"><a class="nav-link"
+									href="#home">Home</a></li>
+							<li class="nav-item" onClick="closeMobileNav()"><a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item" onClick="closeMobileNav()"><a class="nav-link"
+									href="#service">Services</a></li>
+							<li class="nav-item" onClick="closeMobileNav()"><a class="nav-link" href="#team">Team</a>
+							</li>
+							<li class="nav-item" onClick="closeMobileNav()"><a class="nav-link"
+									href="#contact">Contact</a></li>
+							<li class="nav-item" onClick="closeMobileNav()"><a class="sign-in"
+									href="./sign-in.html">Sign In</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<section id="home">
+			<div class="bxslider">
+				<!-- Image Source: https://www.freepik.com/free-photo/asian-businessman-leather-wristwatch-holding-hands-with-partners-smiling-indoor-portrait-team-office-workers-having-fun-before-big-project_10484555.htm -->
+				<li><img src="./assets/banner-1.jpg" /></li>
+
+				<!-- Image Source: https://unsplash.com/photos/business-people-working-in-office-and-brainstorming-BCeRwWOvenM -->
+				<li><img src="./assets/banner-2.jpeg" /></li>
+
+				<!-- Image Source: https://unsplash.com/photos/two-person-standing-on-gray-tile-paving-TamMbr4okv4 -->
+				<li><img src="./assets/banner-3.jpg" /></li>
+			</div>
+		</section>
+	</header>
+	<main>
+		<div class="container">
+			<section id="about">
+				<div class="about-vision">
+					<div class="about-banner col-6-content">
+						<!-- Image Source: https://www.freepik.com/free-photo/business-hands-joined-together-teamwork_2975995.htm -->
+						<img src="./assets/about-img.jpg">
+					</div>
+					<div class="col-6-content">
+						<div class="about-vision-details">
+							<h6>Our Story</h6>
+							<h2>Our team comes with the experiance and knowledge.</h2>
+							<div class="who-we-are">
+								<label>Who We Are</label>
+								<p>A team of dedicated experts who bring a wealth of experience and knowledge to the
+									table. With a shared commitment to pushing the boundaries of technology, we thrive
+									on crafting solutions that empower businesses to excel in the digital realm.</p>
+								<p>Our strength lies in the diverse perspectives and technical acumen of our
+									professionals. We're committed to staying ahead of the curve in technology trends,
+									ensuring our solutions are not only current but also future-ready. Collaborative,
+									client-centric, and dedicated to excellence, we're here to shape a tech-forward
+									future together.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section id="service">
+			<div class="text-center service-header">
+				<h6>Service</h6>
+				<h2>Our Best Service</h2>
+				<p>Experience seamless digital transformation with our expert Progressive Web App development,
+					delivering fast, engaging, and user-friendly web experiences.</p>
+			</div>
+			<div class="service-card-list">
+				<div class="card-3-col">
+					<div class="service-card">
+						<span class="service-icon">
+							<i class="fa fa-desktop" aria-hidden="true"></i>
+						</span>
+						<div>
+							<h4>Progressive Web App Development</h4>
+							<p>
+								Elevate your online presence with our cutting-edge Progressive Web App development,
+								delivering lightning-fast, app-like experiences across all devices.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="card-3-col">
+					<div class="service-card ">
+						<span class="service-icon">
+							<i class="fa fa-cloud" aria-hidden="true"></i>
+						</span>
+						<div>
+							<h4>Cloud Solutions</h4>
+							<p>
+								Unlock the full potential of cloud technology with our tailored solutions, providing
+								scalable, secure, and agile infrastructure for your business operations.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="card-3-col">
+					<div class="service-card ">
+						<span class="service-icon">
+							<i class="fa fa-shield" aria-hidden="true"></i>
+						</span>
+						<div>
+							<h4>Cybersecurity Ecosystem</h4>
+							<p>
+								Fortify your digital fortress with our comprehensive cybersecurity ecosystem, ensuring
+								robust protection for your valuable assets in an ever-evolving threat landscape.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<section id="team">
+				<div class="text-center service-header">
+					<h6>Our Team</h6>
+					<h2>Our Creative Team</h2>
+					<p>Meet our visionary team of creative minds, blending innovation with expertise to bring your
+						unique digital vision to life.</p>
+				</div>
+				<div class="team-card-list">
+					<div class="card-2-col mb-2">
+						<div class="team-style text-center">
+							<div class="team-image">
+								<!-- Image Source: https://www.freepik.com/free-photo/cheerful-young-caucasian-businessman_6514541.htm -->
+								<img src="./assets/team-1.jpg" alt="team">
+							</div>
+							<div class="team-content">
+								<div class="team-social">
+									<ul class="social">
+										<li><a href="javascript:void(0)"></a><i class="fa fa-facebook-official"
+												aria-hidden="true"></i></i></li>
+										<li><a href="javascript:void(0)"></a><i class="fa fa-twitter"
+												aria-hidden="true"></i></li>
+										<li><a href="javascript:void(0)"></a><i class="fa fa-linkedin"
+												aria-hidden="true"></i></li>
+										<li><a href="javascript:void(0)"></a><i class="fa fa-pinterest"
+												aria-hidden="true"></i></i></li>
+									</ul>
+								</div>
+								<h4 class="team-name">Jeffery Riley</h4>
+								<span class="sub-title">Graphic Designer</span>
+							</div>
+						</div>
+					</div>
+					<div class="card-2-col mb-2">
+						<div class="team-style text-center">
+							<div class="team-image">
+								<!-- Image Source https://www.freepik.com/free-photo/happy-successful-manager-holding-glasses_6101392.htm -->
+								<img src="./assets/team-2.jpg" alt="team">
+							</div>
+							<div class="team-content">
+								<div class="team-social">
+									<ul class="social">
+										<li><a href="javascript:void(0)"></a><i class="fa fa-facebook-official"
+												aria-hidden="true"></i></i></li>
+										<li><a href="javascript:void(0)"></a><i class="fa fa-twitter"
+												aria-hidden="true"></i></li>
+										<li><a href="javascript:void(0)"></a><i class="fa fa-linkedin"
+												aria-hidden="true"></i></li>
+										<li><a href="javascript:void(0)"></a><i class="fa fa-pinterest"
+												aria-hidden="true"></i></i></li>
+									</ul>
+								</div>
+								<h4 class="team-name">Riley Beata</h4>
+								<span class="sub-title">UX/UI Designer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<section id="contact">
+			<div class="contact-us">
+				<div class="left-contact-details col-6-content">
+					<h1 class="logo-header"><i class="fa fa-bank"></i>&nbsp;Tech Solutions</h1>
+					<p>Toronto, Canada</p>
+					<p>Contact: +1 (548) 567-4567</p>
+					<p>E-mail: ceo@techsolutions.com</p>
+				</div>
+				<div class="right-contact-details col-6-content">
+					<ul class="footer-menu menu">
+						<li class="nav-item active"><a class="nav-link" href="#home"> > Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about"> > About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#service"> > Services</a></li>
+						<li class="nav-item"><a class="nav-link" href="#team"> > Team</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="text-center footer-sign">&copy; Copyright 2023 Tech Solutions</div>
+		</section>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
