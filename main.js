@@ -92,7 +92,6 @@ function hidePassword(
 	passwordEyeOpen,
 	passwordEyeClose
 ) {
-	console.log("hidePassword :: called :");
 	password.attr("type", "password");
 
 	passwordEyeOpen.css("display", "none");
