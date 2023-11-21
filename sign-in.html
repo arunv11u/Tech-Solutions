@@ -25,13 +25,13 @@
 	<form id="signin-form">
 		<div>
 			<label for="username">Username</label>
-			<input type="text" name="username" id="username" autocomplete="username" required />
+			<input type="text" name="username" id="username" autocomplete="username" placeholder="E.g. arun" required />
 			<p class="error" id="username-error-msg-1">Username is required</p>
 		</div>
 
 		<div>
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password" required />
+			<input type="password" name="password" id="password" placeholder="E.g. Arun@123" required />
 			<p class="error" id="password-error-msg-1">Password is required</p>
 		</div>
 
@@ -41,6 +41,12 @@
 
 		<button id="login-btn" type="button">Submit</button>
 	</form>
+
+	<footer>
+		<section id="contact">
+			<div class="text-center footer-sign">&copy; Copyright 2023 Tech Solutions</div>
+		</section>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
