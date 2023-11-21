@@ -23,20 +23,23 @@
 	</nav>
 
 	<form id="signin-form">
+		<h2>Employee Sign In</h2>
 		<div>
 			<label for="username">Username</label>
 			<input type="text" name="username" id="username" autocomplete="username" placeholder="E.g. arun" required />
 			<p class="error" id="username-error-msg-1">Username is required</p>
 		</div>
 
-		<div>
+		<div class="password">
 			<label for="password">Password</label>
 			<input type="password" name="password" id="password" placeholder="E.g. Arun@123" required />
+			<a id="password-eye-open" href=""><i class="fa fa-eye"></i></a>
+			<a id="password-eye-close" href=""><i class="fa fa-eye-slash"></i></a>
 			<p class="error" id="password-error-msg-1">Password is required</p>
 		</div>
 
 		<div>
-			<p>Forgot Password?</p><span><a href="./reset-password.html">Reset Password</a></span>
+			<p>Forgot your Password?</p><span><a href="./reset-password.html">Reset Password</a></span>
 		</div>
 
 		<button id="login-btn" type="button">Submit</button>

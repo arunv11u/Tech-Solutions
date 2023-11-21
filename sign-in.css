@@ -9,11 +9,20 @@
 }
 
 #username-error-msg-1,
-#password-error-msg-1,
-#password-error-msg-2,
-#password-error-msg-3,
-#password-error-msg-4,
-#password-error-msg-5,
-#password-error-msg-6 {
+#password-error-msg-1 {
+	display: none;
+}
+
+.password {
+	position: relative;
+}
+
+#password-eye-open,
+#password-eye-close {
+	position: absolute;
+	right: 8px;
+}
+
+#password-eye-open {
 	display: none;
 }

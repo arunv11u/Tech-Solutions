@@ -71,3 +71,30 @@ function preloadImages(src) {
 
 	image.src = src;
 }
+
+function resetForm(formId) {
+	$(formId).trigger("reset");
+}
+
+function showPassword(
+	password,
+	passwordEyeOpen,
+	passwordEyeClose
+) {
+	password.attr("type", "text");
+
+	passwordEyeOpen.css("display", "inline");
+	passwordEyeClose.css("display", "none");
+}
+
+function hidePassword(
+	password,
+	passwordEyeOpen,
+	passwordEyeClose
+) {
+	console.log("hidePassword :: called :");
+	password.attr("type", "password");
+
+	passwordEyeOpen.css("display", "none");
+	passwordEyeClose.css("display", "inline");
+}
