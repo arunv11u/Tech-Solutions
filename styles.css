@@ -145,10 +145,6 @@ p {
 	border: 0px !important;
 }
 
-.bx-viewport {
-	height: 95vh !important;
-}
-
 #contact {
 	background: #171819;
 	padding: 10px;
@@ -572,6 +568,12 @@ section#home {
 
 .error {
 	color: red;
+}
+
+@media screen and (min-width: 992px) {
+	.bx-viewport {
+		height: 95vh !important;
+	}
 }
 
 @media screen and (max-width: 992px) {
