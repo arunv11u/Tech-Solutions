@@ -14,8 +14,8 @@ $(function () {
 			password: "Arun@123"
 		};
 
-		const _isValidUsername = isValidUsername(username.val());
-		const _isValidPassword = isValidPassword(password.val());
+		const _isValidUsername = isValidUsername(username);
+		const _isValidPassword = isValidPassword(password);
 
 		if (!_isValidUsername || !_isValidPassword) return;
 
@@ -33,11 +33,11 @@ $(function () {
 	});
 
 	username.on("focusout input", () => {
-		isValidUsername(username.val());
+		isValidUsername(username);
 	});
 
 	password.on("focusout input", () => {
-		isValidPassword(password.val());
+		isValidPassword(password);
 	});
 
 	passwordEyeClose.click((event) => {
@@ -55,22 +55,32 @@ $(function () {
 
 function isValidUsername(username) {
 	const usernameErrorMessage = $("#username-error-msg-1");
+	const _username = username.val();
 
-	if (!username) {
+	if (!_username) {
 		usernameErrorMessage.css("display", "block");
+		highlightRequiredField(username);
+
 		return false;
 	} else usernameErrorMessage.css("display", "none");
+
+	resetRequiredField(username);
 
 	return true;
 }
 
 function isValidPassword(password) {
 	const passwordErrorMessage = $("#password-error-msg-1");
+	const _password = password.val();
 
-	if (!password) {
+	if (!_password) {
 		passwordErrorMessage.css("display", "block");
+		highlightRequiredField(password);
+
 		return false;
 	} else passwordErrorMessage.css("display", "none");
+
+	resetRequiredField(password);
 
 	return true;
 }

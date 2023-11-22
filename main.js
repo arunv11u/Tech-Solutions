@@ -97,3 +97,11 @@ function hidePassword(
 	passwordEyeOpen.css("display", "none");
 	passwordEyeClose.css("display", "inline");
 }
+
+function highlightRequiredField(textField) {
+	textField.css("border", "2px solid red");
+}
+
+function resetRequiredField(textField) {
+	textField.css("border", "revert");
+}

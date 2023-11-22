@@ -570,6 +570,20 @@ section#home {
 	color: red;
 }
 
+.password {
+	position: relative;
+}
+
+#password-eye-open,
+#password-eye-close {
+	position: absolute;
+	right: 8px;
+}
+
+#password-eye-open {
+	display: none;
+}
+
 @media screen and (min-width: 992px) {
 	.bx-viewport {
 		height: 95vh !important;
