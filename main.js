@@ -19,6 +19,7 @@ $(function () {
 		mode: "fade"
 	});
 
+	// Highlight the selected link.
 	$(".menu a.nav-link").each((anchorIndex, anchor) => {
 		$(anchor).click(function (e) {
 			e.preventDefault();
@@ -47,12 +48,14 @@ $(function () {
 
 	const close = $(".close");
 
+	// Show the navbar in mobile view if clicked.
 	if (btn) {
 		btn.click(() => {
 			modal.css("display", "block");
 		})
 	}
 
+	// Close the navbar in mobile view if close icon is clicked.
 	if (close) {
 		close.click(() => {
 			modal.css("display", "none");
@@ -60,11 +63,13 @@ $(function () {
 	}
 })
 
+// Close the menubar when some link is selected from the menu.
 function closeMobileNav() {
 	const modal = $("#myModal");
 
 	modal.css("display", "none");
 }
+
 
 function preloadImages(src) {
 	const image = new Image();
