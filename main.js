@@ -55,8 +55,7 @@ $(function () {
 	if (btn) {
 		modal.css("left", "-415px");
 		btn.click(() => {
-			modal.css("display", "block").animate({ "left": "0px" }, 1000);
-
+			modal.css("display", "block").animate({ "left": "0px" }, 500);
 		})
 	}
 
@@ -79,9 +78,9 @@ $(function () {
 
 	const teams = $(".team-style");
 	teams.each((index, team) => {
-		$(team).hover(function() {
+		$(team).hover(function () {
 			$(this).addClass("team-style-hover");
-		}, function() {
+		}, function () {
 			$(this).removeClass("team-style-hover");
 		});
 	});
