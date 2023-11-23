@@ -273,7 +273,7 @@ p {
   min-height: 331px;
 }
 
-.service-card:hover {
+.service-card-hover {
   background-color: rgba(240, 240, 240, 0.8);
   box-shadow: 5px 10px #888888;
 }
@@ -323,7 +323,7 @@ p {
   color: #6d6d6d;
 }
 
-.service-card:hover .service-icon {
+.service-card-hover .service-icon {
   background-color: #155bd5 !important;
   color: #fff !important;
   box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04),
@@ -425,22 +425,22 @@ p {
   color: #6d6d6d;
 }
 
-.team-style:hover .team-content {
+.team-style-hover .team-content {
   padding-top: 50px;
 }
 
-.team-style:hover .team-content::before {
+.team-style-hover .team-content::before {
   opacity: 1;
 }
 
-.team-style:hover .team-content .team-social {
+.team-style-hover .team-content .team-social {
   top: -20px;
   visibility: visible;
   opacity: 1;
 }
 
-.team-style:hover .team-content .team-name,
-.team-style:hover .team-content .sub-title {
+.team-style-hover .team-content .team-name,
+.team-style-hover .team-content .sub-title {
   color: #fff;
 }
 

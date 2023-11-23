@@ -19,7 +19,7 @@ $(function () {
 		mode: "fade"
 	});
 
-	// Highlight the selected link.
+	// Highlight the selected link and scroll to the related content.
 	$(".menu a.nav-link").each((anchorIndex, anchor) => {
 		$(anchor).click(function (e) {
 			e.preventDefault();
@@ -61,6 +61,24 @@ $(function () {
 			modal.css("display", "none");
 		})
 	}
+
+	const serviceCards = $(".service-card");
+	serviceCards.each((index, serviceCard) => {
+		$(serviceCard).hover(function () {
+			$(this).addClass("service-card-hover");
+		}, function () {
+			$(this).removeClass("service-card-hover");
+		});
+	});
+
+	const teams = $(".team-style");
+	teams.each((index, team) => {
+		$(team).hover(function() {
+			$(this).addClass("team-style-hover");
+		}, function() {
+			$(this).removeClass("team-style-hover");
+		});
+	});
 })
 
 // Close the menubar when some link is selected from the menu.
