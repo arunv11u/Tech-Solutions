@@ -1,92 +1,75 @@
+<!-- 
+Student Name: Arun Varadharajalu
+Student Number: 8896434
+ -->
+
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Tech Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="sign-in.css" />
-  </head>
 
-  <body>
-    <nav class="nav fixed-nav">
-      <a class="logo" href="./index.html"
-        ><i class="fa fa-bank"></i>&nbsp;Tech Solutions</a
-      >
-      <div></div>
-    </nav>
+<head>
+	<meta charset="UTF-8" />
+	<title>Tech Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="sign-in.css" />
+</head>
 
-    <div class="formWrapper">
-      <form id="signin-form">
-        <h2>Employee Sign In</h2>
-        <div>
-          <label for="username">Username</label><br />
-          <input
-            type="text"
-            name="username"
-            id="username"
-            autocomplete="username"
-            placeholder="E.g. arun"
-            required
-          />
-          <div class="errorWrapper">
-            <p class="error" id="username-error-msg-1">Username is required</p>
-          </div>
-        </div>
+<body>
+	<nav class="nav fixed-nav">
+		<a class="logo" href="./index.html"><i class="fa fa-bank"></i>&nbsp;Tech Solutions</a>
+		<div></div>
+	</nav>
 
-        <div class="password">
-          <label for="password">Password</label><br />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="E.g. Arun@123"
-            required
-          />
-          <a id="password-eye-open" href=""><i class="fa fa-eye"></i></a>
-          <a id="password-eye-close" href=""><i class="fa fa-eye-slash"></i></a>
-          <div class="errorWrapper">
-            <p class="error" id="password-error-msg-1">Password is required</p>
-          </div>
-        </div>
+	<div class="formWrapper">
+		<form id="signin-form">
+			<h2>Employee Sign In</h2>
+			<div>
+				<label for="username">Username</label><br />
+				<input type="text" name="username" id="username" autocomplete="username" placeholder="E.g. arun"
+					required />
+				<div class="errorWrapper">
+					<p class="error" id="username-error-msg-1">Username is required</p>
+				</div>
+			</div>
 
-        <button id="login-btn" type="button">Sign In</button>
-        <div class="fp">
-          <p>Forgot your Password?</p>
-          <a href="./reset-password.html">Reset Password</a>
-        </div>
-      </form>
-    </div>
+			<div class="password">
+				<label for="password">Password</label><br />
+				<input type="password" name="password" id="password" placeholder="E.g. Arun@123" required />
+				<a id="password-eye-open" href=""><i class="fa fa-eye"></i></a>
+				<a id="password-eye-close" href=""><i class="fa fa-eye-slash"></i></a>
+				<div class="errorWrapper">
+					<p class="error" id="password-error-msg-1">Password is required</p>
+				</div>
+			</div>
 
-    <footer>
-      <section id="contact">
-        <div class="text-center footer-sign">
-          &copy; Copyright 2023 Tech Solutions
-        </div>
-      </section>
-    </footer>
+			<button id="login-btn" type="button">Sign In</button>
+			<div class="fp">
+				<p>Forgot your Password?</p>
+				<a href="./reset-password.html">Reset Password</a>
+			</div>
+		</form>
+	</div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <script src="main.js"></script>
-    <script src="sign-in.js"></script>
-  </body>
+	<footer>
+		<section id="contact">
+			<div class="text-center footer-sign">
+				&copy; Copyright 2023 Tech Solutions
+			</div>
+		</section>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script src="main.js"></script>
+	<script src="sign-in.js"></script>
+</body>
+
 </html>

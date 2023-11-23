@@ -1,4 +1,7 @@
 
+// Student Name: Arun Varadharajalu
+// Student Number: 8896434
+
 $(function () {
 	const login = $("#login-btn");
 	const username = $("#username");

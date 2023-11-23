@@ -1,4 +1,7 @@
 
+// Student Name: Arun Varadharajalu
+// Student Number: 8896434
+
 $(function () {
 	const resetPassword = $("#reset-password-btn");
 	const username = $("#username");

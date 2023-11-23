@@ -1,4 +1,7 @@
 
+// Student Name: Arun Varadharajalu
+// Student Number: 8896434
+
 $(function () {
 
 	// Preload banner images
@@ -50,8 +53,10 @@ $(function () {
 
 	// Show the navbar in mobile view if clicked.
 	if (btn) {
+		modal.css("left", "-415px");
 		btn.click(() => {
-			modal.css("display", "block");
+			modal.css("display", "block").animate({ "left": "0px" }, 1000);
+
 		})
 	}
 
@@ -59,6 +64,7 @@ $(function () {
 	if (close) {
 		close.click(() => {
 			modal.css("display", "none");
+			modal.css("left", "-415px");
 		})
 	}
 
