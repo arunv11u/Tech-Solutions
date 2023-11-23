@@ -144,6 +144,10 @@ p {
   border: 0px !important;
 }
 
+.bx-wrapper .bx-controls-direction a {
+	z-index: 0 !important;
+}
+
 #contact {
   background: #171819;
   padding: 10px;
@@ -514,7 +518,7 @@ p {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #f13a11;
   text-decoration: none;
   cursor: pointer;
 }

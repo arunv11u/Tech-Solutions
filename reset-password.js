@@ -82,7 +82,7 @@ function isValidOtp(otp) {
 	const otpErrorMessage2 = $("#otp-error-msg-2");
 	const _otp = otp.val();
 
-	const errors = $("#otp ~ .error");
+	const errors = $("#otp ~ .errorWrapper .error");
 	errors.css("display", "none");
 
 	if (!_otp) {
@@ -116,7 +116,7 @@ function isValidNewPassword(newPassword, confirmPassword) {
 	
 	const _newPassword = newPassword.val();
 
-	const errors = $("#new-password ~ .error");
+	const errors = $("#new-password ~ .errorWrapper .error");
 	errors.css("display", "none");
 
 	if (!_newPassword) {
@@ -160,7 +160,7 @@ function isValidConfirmPassword(confirmPassword, newPassword) {
 	const _confirmPassword = confirmPassword.val();
 	const _newPassword = newPassword.val();
 
-	const errors = $("#confirm-password ~ .error");
+	const errors = $("#confirm-password ~ .errorWrapper .error");
 	errors.css("display", "none");
 
 	if (!_confirmPassword) {
