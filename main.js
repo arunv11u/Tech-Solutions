@@ -91,6 +91,7 @@ function closeMobileNav() {
 	const modal = $("#myModal");
 
 	modal.css("display", "none");
+	modal.css("left", "-415px");
 }
 
 
